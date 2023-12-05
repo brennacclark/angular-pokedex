@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,12 +10,16 @@ export class AppComponent {
 
   subtitle = 'An Online Pokédex';
 
-  storedTheme = 'theme-light';
+  storedTheme: string = 'theme-light';
 
-  
+  ngOnInit(): void {
+    // Retrieve the theme from local storage or use a default theme
+    this.storedTheme = localStorage.getItem('theme-color') || 'theme-light';
+  }
 
   onThemeChanged(theme: string) {
+    // Update the theme in local storage
+    localStorage.setItem('theme-color', theme);
     this.storedTheme = theme;
   }
-    
 }
