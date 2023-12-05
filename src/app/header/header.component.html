@@ -1,0 +1,27 @@
+<main class="header-box {{ selectedTheme }}">
+  <p>header works!</p>
+  <p>{{ selectedTheme }}</p>
+
+  <section class="theme-options">
+    <div
+      id="theme-light"
+      [ngClass]="selectedTheme === 'theme-light' ? 'active' : ''"
+      (click)="setTheme('theme-light')"
+    ></div>
+    <div
+      id="theme-dark"
+      [ngClass]="selectedTheme === 'theme-dark' ? 'active' : ''"
+      (click)="setTheme('theme-dark')"
+    ></div>
+    <div
+      id="theme-red"
+      [ngClass]="selectedTheme === 'theme-red' ? 'active' : ''"
+      (click)="setTheme('theme-red')"
+    ></div>
+    <div
+      id="theme-blue"
+      [ngClass]="selectedTheme === 'theme-blue' ? 'active' : ''"
+      (click)="setTheme('theme-blue')"
+    ></div>
+  </section>
+</main>

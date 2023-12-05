@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --border-color: #000;
+  --inactive-opacity: 0.5;
+  --active-opacity: 1;
+
+  /* Text Variables */
+  --text-color-default: #222;
+  --text-color-black: #000;
+  --text-color-white: #ffffff;
+  --text-secondary-color-white: #ccc;
+
+  /* Light Theme */
+  --color-light: #eee;
+  --color-light-primary-background: #fff;
+  --color-light-header-background: #ddd;
+
+  /* Dark Theme */
+  --color-dark: #000;
+  --color-dark-primary-background: #5c5c5c;
+  --color-dark-header-background: #333;
+
+  /* Red Theme */
+  --color-red: #ff6666;
+  --color-red-primary-background: #ff6666;
+  --color-red-header-background: #ff9999;
+
+  /* Blue Theme */
+  --color-blue: #6699ff;
+  --color-blue-primary-background: #6699ff;
+  --color-blue-header-background: #9ab8ff;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  height: 100%;
+  padding: 20px;
+  height: 100vh;
+}
+
+.content {
+  height: 100%;
+}
+
+h5.title {
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 20px;
+}
